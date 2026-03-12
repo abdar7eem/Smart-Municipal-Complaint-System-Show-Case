@@ -266,8 +266,3 @@ Possible future improvements include:
 
 This repository is presented as a showcase of the project’s system design, features, and interfaces. Screenshots are included to demonstrate the implemented workflows across the citizen app, municipal staff dashboard, and maintenance staff dashboard.
 
----
-
-## Authors
-
-Developed as a smart municipal digital transformation project for complaint reporting, field maintenance coordination, and public service monitoring.
