@@ -1,103 +1,161 @@
-# Smart Municipal Complaint System
+# Smart Municipal Complaint System 🏙️
 
-A full-stack smart municipal complaint platform that enables citizens to report public infrastructure and service issues through a cross-platform mobile application, while municipal staff and maintenance teams manage, monitor, and resolve complaints through dedicated web dashboards.
-
-The system was designed to improve how municipalities receive, classify, assign, and track complaints in a smarter, faster, and more organized way.
-
----
-
-## Overview
-
-The **Smart Municipal Complaint System** is a digital platform built to modernize the complaint management process between citizens and municipalities.
-
-Citizens can easily report real-world issues such as:
-
-- Road potholes
-- Water leaks
-- Broken traffic lights
-- Street damage
-- Public service faults
-- Other municipal maintenance issues
-
-Using the mobile application, users can submit complaints with:
-- Exact location using GPS or manual map selection
-- Detailed problem description
-- Uploaded photos and evidence
-- Anonymous or identified submission option
-
-Once submitted, the complaint is automatically processed by the backend, checked against existing reports to detect possible duplicates, and then assigned to the most suitable maintenance employee based on specialization, region, and current workload.
+<p>
+  <img src="screenshots/albireh-logo.png" width="220"/>
+</p>
 
 ---
 
-## Project Goals
+<p align="center">
 
-This project aims to:
+![Flutter](https://img.shields.io/badge/Mobile-Flutter-46D1FD)
+![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS-green)
+![React](https://img.shields.io/badge/Web-React-blue)
+![Backend](https://img.shields.io/badge/Backend-FastAPI-009688)
+![Database](https://img.shields.io/badge/Database-MongoDB-47A248)
+![Status](https://img.shields.io/badge/Status-Showcase-orange)
+![Project](https://img.shields.io/badge/Project-Smart%20Municipal%20System-purple)
 
-- Simplify complaint reporting for citizens
-- Improve municipality response time
-- Reduce duplicate reports
-- Automate complaint assignment fairly
-- Balance workload among maintenance staff
-- Track complaint status transparently
-- Provide municipalities with a smarter operational view of public issues
+</p>
 
 ---
 
-## Key Features
+# 📌 Overview
 
-### Citizen Mobile App
-- Submit municipal complaints quickly and easily
-- Detect user location using GPS
-- Allow manual location selection on the map
-- Convert coordinates into detailed location names using APIs
-- Attach photos and evidence to the complaint
+**Smart Municipal Complaint System** is a full-stack digital platform designed to modernize how municipalities receive, process, assign, and resolve public service complaints.
+
+The platform enables citizens to report infrastructure and municipal service issues through a **cross-platform mobile application**, while municipality admins and staff manage operations through **web dashboards**.
+
+The system helps municipalities move from slow manual complaint handling to a smarter, more organized, and transparent workflow.
+
+---
+
+# ⚠ Project Notice
+
+This repository is a **portfolio showcase only**.
+
+The source code is not publicly shared in this repository. This showcase is intended to present:
+
+- Project idea
+- Core features
+- System architecture
+- Technology stack
+- Screenshots of the implemented system
+
+---
+
+# 🏗 System Architecture
+
+```
+Citizens
+   │
+   └── Flutter Mobile App
+          │
+          ▼
+      FastAPI Backend
+          │
+          ▼
+      MongoDB Database
+          │
+    ┌─────┴─────────────┐
+    │                   │
+    ▼                   ▼
+Admin Municipality   Municipal Staff Dashboard
+      (React)               (React)
+```
+
+---
+
+# 🛠 Tech Stack
+
+## Mobile Application
+- Flutter
+- Cross-platform support for Android and iOS
+- GPS / Location Services
+- Map APIs
+- Reverse Geocoding APIs
+- Image upload support
+
+## Web Dashboards
+- React.js
+- Responsive dashboards
+- Complaint monitoring and management tools
+
+## Backend
+- FastAPI
+- Duplicate complaint detection
+- Smart auto-assignment engine
+- Complaint lifecycle management
+
+## Database
+- MongoDB
+- Flexible document-based storage
+
+---
+
+# 🚀 Core Features
+
+## Citizen Mobile Application
+
+- Submit complaints quickly and easily
+- Report issues such as:
+  - Road potholes
+  - Water leaks
+  - Broken traffic lights
+  - Street damage
+  - Public infrastructure faults
+- Detect exact location using GPS
+- Select location manually on the map
+- Upload photos and evidence
 - Submit complaints anonymously or with user identity
 - Track complaint progress in real time
-- Support Arabic and English languages
-- Support Dark Mode and Light Mode
-- Available for both Android and iOS
-
-### Duplicate Complaint Detection
-The system checks whether a newly submitted complaint is a duplicate by comparing it with previous complaints based on:
-- Problem type
-- Geographic proximity
-- Time window
-- Existing reports in the same area
-
-This helps prevent redundant reports and improves complaint handling efficiency.
-
-### Smart Auto-Assignment Engine
-New complaints are automatically assigned to the most suitable maintenance employee using intelligent logic based on:
-- Employee specialization
-- Employee region / zone
-- Current workload
-- Number of active assigned complaints
-
-This ensures fair load balancing and faster issue resolution.
-
-### Municipal Staff Dashboard
-Municipality staff can:
-- View all incoming complaints
-- Review and verify complaint assignments
-- Monitor urgent or delayed complaints
-- Add maintenance employees
-- Add and manage service regions
-- Track complaint progress across the system
-- Analyze complaint distribution geographically
-
-### Maintenance Staff Dashboard
-Maintenance employees can:
-- View assigned complaints
-- Open complaint details
-- Update complaint status
-- Mark complaints as resolved
-- Upload proof and evidence after completing the work
+- Arabic and English language support
+- Dark mode and light mode
 
 ---
 
-## Complaint Lifecycle
+## Duplicate Complaint Detection
 
-Each complaint moves through a clear status flow:
+The system automatically detects duplicate complaints by comparing:
+
+- Problem type
+- Location proximity
+- Time window
+- Existing complaints in the same area
+
+This prevents redundant reports and improves system efficiency.
+
+---
+
+## Smart Auto-Assignment Engine
+
+Complaints are automatically assigned to the most suitable employee based on:
+
+- Specialization
+- Region / zone
+- Current workload
+- Number of assigned complaints
+
+This ensures fair distribution of work among staff.
+
+---
+
+# 👥 User Roles
+
+## Citizen
+Reports complaints through the mobile application and tracks their status.
+
+## Admin Municipality
+Manages the overall complaint system, monitors reports, manages regions, and supervises operations.
+
+## Municipal Staff
+Receives assigned complaints, updates status, resolves issues, and uploads proof of resolution.
+
+---
+
+# 🔄 Complaint Lifecycle
+
+Each complaint follows a clear workflow:
 
 1. **New**
 2. **Triaged**
@@ -106,163 +164,88 @@ Each complaint moves through a clear status flow:
 5. **Resolved**
 6. **Closed**
 
-This gives both citizens and municipality staff full visibility into complaint progress.
+---
+
+# 🗺 Active Complaint Heatmap
+
+The municipality dashboard includes a **complaint heatmap** showing geographic complaint density.
+
+This allows municipalities to identify:
+
+- High complaint zones
+- Infrastructure problem clusters
+- Areas requiring urgent attention
+- Patterns of repeated issues
+
+The heatmap converts raw complaint data into actionable geographic insights.
 
 ---
 
-## User Roles
+# 🖼 System Screenshots
 
-### 1. Citizen
-The citizen uses the mobile application to submit and track complaints.
+## Citizen Mobile Application
 
-### 2. Municipal Staff
-Municipal staff review complaints, monitor operations, manage assignments, add regions, and manage maintenance staff.
-
-### 3. Maintenance Employee
-Maintenance employees receive assigned complaints, work on resolving them, and upload proof of completion.
-
----
-
-## Heatmap and Active Map Monitoring
-
-One of the key features of the staff dashboard is the **Active Complaint Heatmap**.
-
-This map provides a visual representation of complaint density across different areas, helping municipal staff quickly identify:
-- High-frequency complaint zones
-- Problem concentration areas
-- Regions requiring urgent intervention
-- Patterns of repeated infrastructure failures
-
-The heatmap transforms raw complaint data into an operational geographic view, allowing decision-makers to better prioritize resources and improve field response planning.
-
----
-
-## Tech Stack
-
-### Mobile Application
-- **Flutter**
-- Cross-platform support for **Android** and **iOS**
-
-### Web Dashboards
-- **React**
-
-### Backend
-- **FastAPI**
-
-### Database
-- **MongoDB**
-
-### Additional Integrations
-- GPS / Location Services
-- Reverse Geocoding APIs
-- Map APIs
-- File/Image Upload Handling
-
----
-
-## System Architecture
-
-The project follows a full-stack architecture composed of:
-
-- **Citizen Mobile App** for complaint submission and tracking
-- **Municipal Staff Web Dashboard** for operational management
-- **Maintenance Staff Web Dashboard** for field complaint handling
-- **FastAPI Backend** for business logic, duplicate detection, auto-assignment, and status updates
-- **MongoDB Database** for flexible complaint and user data storage
-
----
-
-## Screenshots
-
-## Citizen Mobile App
-
-### Dashboard
 <p align="center">
-  <img src="screenshots/citizen-dashboard.png" alt="Citizen Dashboard" width="300">
+  <img src="screenshots/citizen-dashboard.png" width="220">
+  <img src="screenshots/citizen-new-complaint.png" width="220">
+  <img src="screenshots/citizen-tracking.png" width="220">
+  <img src="screenshots/citizen-profile.png" width="220">
 </p>
 
-### New Complaint
-<p align="center">
-  <img src="screenshots/citizen-new-complaint.png" alt="New Complaint" width="300">
-</p>
+---
 
-### Complaint Tracking
-<p align="center">
-  <img src="screenshots/citizen-tracking.png" alt="Complaint Tracking" width="300">
-</p>
+## Admin Municipality Dashboard
 
-### Profile
 <p align="center">
-  <img src="screenshots/citizen-profile.png" alt="Citizen Profile" width="300">
+  <img src="screenshots/a1.png" width="420">
+  <img src="screenshots/a2.png" width="420">
+  <img src="screenshots/a3.png" width="420">
+  <img src="screenshots/a4.png" width="420">
+  <img src="screenshots/a5.png" width="420">
+  <img src="screenshots/a6.png" width="420">
+  <img src="screenshots/a7.png" width="420">
+  <img src="screenshots/a8.png" width="420">
+  <img src="screenshots/a9.png" width="420">
 </p>
 
 ---
 
 ## Municipal Staff Dashboard
 
-### Dashboard
 <p align="center">
-  <img src="screenshots/staff-dashboard.png" alt="Staff Dashboard" width="700">
-</p>
-
-### Active Complaint Heatmap
-<p align="center">
-  <img src="screenshots/staff-heatmap.png" alt="Staff Heatmap" width="700">
-</p>
-
-### Add Maintenance Employee
-<p align="center">
-  <img src="screenshots/staff-add-maintenance.png" alt="Add Maintenance Employee" width="700">
+  <img src="screenshots/s0.png" width="420">
+  <img src="screenshots/s1.png" width="420">
+  <img src="screenshots/s2.png" width="420">
+  <img src="screenshots/s3.png" width="420">
+  <img src="screenshots/s4.png" width="420">
+  <img src="screenshots/s5.png" width="420">
+  <img src="screenshots/s6.png" width="420">
 </p>
 
 ---
 
-## Maintenance Staff Dashboard
+# 📊 Project Highlights
 
-### Dashboard
-<p align="center">
-  <img src="screenshots/maintenance-dashboard.png" alt="Maintenance Dashboard" width="700">
-</p>
-
-### Assigned Complaints
-<p align="center">
-  <img src="screenshots/maintenance-assigned-complaints.png" alt="Assigned Complaints" width="700">
-</p>
-
-### Complaint Details and Evidence Upload
-<p align="center">
-  <img src="screenshots/maintenance-complaint-details.png" alt="Complaint Details" width="700">
-</p>
+✔ Cross-platform mobile application  
+✔ Municipality admin dashboard  
+✔ Municipality staff dashboard  
+✔ Smart duplicate complaint detection  
+✔ Auto-assignment engine  
+✔ Complaint lifecycle tracking  
+✔ Map-based complaint reporting  
+✔ Heatmap-based monitoring  
 
 ---
 
-## Why This Project Matters
 
-Municipal complaint handling is often slow, manual, and difficult to monitor. This project introduces a smarter and more transparent workflow by combining:
-- citizen-friendly reporting,
-- automated operational decision-making,
-- fair task distribution,
-- geographic analysis,
-- and real-time status tracking.
+# 📝 Repository Showcase Note
 
-It helps municipalities move from reactive complaint handling to a more organized and data-driven service model.
+This repository is presented as a **project showcase** demonstrating the system architecture, features, and user interfaces of the Smart Municipal Complaint System.
 
 ---
 
-## Future Enhancements
+# 👨‍💻 Developed By
 
-Possible future improvements include:
-- Push notifications for complaint updates
-- SLA monitoring and escalation rules
-- Advanced analytics dashboard
-- Complaint priority prediction using AI
-- Photo-based issue classification
-- Integration with municipal GIS systems
-- Internal staff performance reports
-
----
-
-## Repository Showcase Note
-
-This repository is presented as a showcase of the project’s system design, features, and interfaces. Screenshots are included to demonstrate the implemented workflows across the citizen app, municipal staff dashboard, and maintenance staff dashboard.
-
+- Anas Al Sayed
+- Abd Al-rheem Yaseen
+- Rakan Omar
